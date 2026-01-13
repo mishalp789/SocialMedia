@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Social Media</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Your Profile</h2>
+    <img id="profilePic" src="" width="120" height="120" style="border-radius:50%; border:1px solid #ccc">
+    <br><br>
+
+    <input type="file" id="profilePicInput">
+    <button onclick="uploadProfilePic()">Upload</button>
+
+    <p id="picError" style="color:red;"></p>
+    <hr> 
+
+    <h2>User Profile</h2>
+
+    <p><b>Username:</b> <span id="username"></span></p>
+    <p><b>Email:</b> <span id="email"></span></p>
+
+    <button onclick="logout()">Logout</button>
+
+    <p id="error" style="color:red;"></p>
+    <h3>Create Post</h3>
+    <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+    <button onclick="createPost()">Post</button>
+
+    <h3>Your Posts</h3>
+    <div id="posts"></div>
+    <button id="prevBtn" onclick="prevPage()">Previous</button>
+    <button id="nextBtn" onclick="nextPage()">Next</button>
+    <p id="postError" style="color:red"></p>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
